@@ -1,68 +1,198 @@
+/* ============ Google Fonts ============ */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+/* ============ Variables CSS ============ */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* ======== Colors ======== */
+    /* Color mode HSL (hue, saturation, lightness) */
+    --first-color: hsl(353, 100%, 65%);
+    --title-color: hsl(244, 34%, 26%);
+    --text-color: hsl(244, 16%, 43%);
+    --body-color: hsl(258, 60%, 98%);
+    --container-color: #fff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* ======== Font and Typography ======== */
+    /* .5rem = 8px | 1rem = 16px ... */
+    --body-font: 'Rubik', sans-serif;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* ======== Font Weight ======== */
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* ======== Box Shadow ======== */
+    --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+    /* ======== Border Radius ======== */
+    --border-radius: 20px;
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Responsive typograpy */
+@media screen and (max-width: 1024px) {
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
 }
-a:hover {
-  color: #535bf2;
+
+/* ============ Base ============ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid var(--first-color);
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+text,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    background-color: var(--body-color);
+    line-height: 1.7;
+    color: var(--text-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ============ Resuable CSS Classes ============ */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+    padding-block: 4rem;
+}
+
+.section__title.active {
+    color: rebeccapurple;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+}
+
+.section__title::before {
+    content: '';
+    background: url(./assets/dots-bg.svg);
+    height: 2.25rem;
+    width: 2.25rem;
+    position: absolute;
+    left: -0.875rem;
+    top: -0.875rem;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+    transition: all .3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 14px 1px var(--first-color);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 880px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1060px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1240px;
+    }
 }
