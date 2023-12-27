@@ -29,4 +29,22 @@ export const menus = [
         link: "#contact",
         icon: "icon-bubble"
     }
-] 
+]
+
+export const socials = [
+    {
+        id: 1,
+        link: "https://www.instagram.com/azhmi_fauzi_m/",
+        icon: "fa-brands fa-instagram"
+    },
+    {
+        id: 2,
+        link: "https://www.linkedin.com/in/azhmi-fauzi-mahdin/",
+        icon: "fa-brands fa-linkedin"
+    },
+    {
+        id: 3,
+        link: "https://github.com/azhmifauzimahdin",
+        icon: "fa-brands fa-github"
+    }
+]
