@@ -7,6 +7,16 @@ import Certificate6 from '../assets/certificate/certificate6.jpg';
 import Certificate7 from '../assets/certificate/certificate7.jpg';
 import Certificate8 from '../assets/certificate/certificate8.jpg';
 import Certificate9 from '../assets/certificate/certificate9.png';
+import LogoHTML from '../assets/logo/logo-html.svg';
+import LogoCSS from '../assets/logo/logo-css.svg';
+import LogoJavaScript from '../assets/logo/logo-javascript.svg';
+import LogoReactJS from '../assets/logo/logo-react.svg';
+import LogoVueJS from '../assets/logo/logo-vue.svg';
+import LogoBootstrap from '../assets/logo/logo-bootstrap.svg';
+import LogoMySQL from '../assets/logo/logo-mysql.svg';
+import LogoPHP from '../assets/logo/logo-php.svg';
+import LogoLaravel from '../assets/logo/logo-laravel.svg';
+import LogoCodeigniter from '../assets/logo/logo-codeigniter.svg';
 
 export const menus = [
     {
@@ -137,5 +147,68 @@ export const certificates = [
         title: "Belajar Dasar-dasar HTML dan CSS",
         image: Certificate9,
         link: "https://www.codepolitan.com/c/RSEN4NW"
+    }
+]
+
+export const skills = [
+    {
+        id: 1,
+        title: "HTML",
+        image: LogoHTML,
+        url: "https://id.wikipedia.org/wiki/HTML"
+    },
+    {
+        id: 2,
+        title: "CSS",
+        image: LogoCSS,
+        url: "https://id.wikipedia.org/wiki/CSS"
+    },
+    {
+        id: 3,
+        title: "JavaScript",
+        image: LogoJavaScript,
+        url: "https://id.wikipedia.org/wiki/JavaScript"
+    },
+    {
+        id: 4,
+        title: "React Js",
+        image: LogoReactJS,
+        url: "https://legacy.reactjs.org/"
+    },
+    {
+        id: 5,
+        title: "Vue Js",
+        image: LogoVueJS,
+        url: "https://vuejs.org/"
+    },
+    {
+        id: 6,
+        title: "Bootstrap",
+        image: LogoBootstrap,
+        url: "https://getbootstrap.com/"
+    },
+    {
+        id: 7,
+        title: "MySQL",
+        image: LogoMySQL,
+        url: "https://www.mysql.com/"
+    },
+    {
+        id: 8,
+        title: "PHP",
+        image: LogoPHP,
+        url: "https://www.php.net/"
+    },
+    {
+        id: 9,
+        title: "Laravel",
+        image: LogoLaravel,
+        url: "https://laravel.com/"
+    },
+    {
+        id: 10,
+        title: "Codeigniter",
+        image: LogoCodeigniter,
+        url: "https://www.codeigniter.com/"
     }
 ]

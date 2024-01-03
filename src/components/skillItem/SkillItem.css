@@ -1,0 +1,44 @@
+.skill__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.skill__item {
+    flex: 0 1 8%;
+}
+
+.skill__img {
+    filter: grayscale(1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.skill__img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 992px) {
+    .skill__item {
+        flex: 0 1 10%;
+    }
+
+    .skill__img {
+        filter: grayscale(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill__item {
+        flex: 0 1 11%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill__item {
+        flex: 0 1 15%;
+    }
+}
