@@ -1,7 +1,12 @@
 import React from 'react';
 import './Resume.css';
-import { educations, experiences } from '../../data/data';
+import { certificates, educations, experiences } from '../../data/data';
 import { CardResume } from '../../components';
+import { Navigation, Pagination, Keyboard, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Resume = () => {
     return (
@@ -12,7 +17,8 @@ const Resume = () => {
                 <CardResume data={educations} icon="icon-graduation" />
                 <CardResume data={experiences} icon="icon-briefcase" />
             </div>
-            {/* <Swiper
+
+            <Swiper
                 navigation={true}
                 pagination={{ clickable: true }}
                 modules={[Navigation, Pagination, Keyboard, Autoplay]}
@@ -34,15 +40,15 @@ const Resume = () => {
                 className="certificate__container"
                 data-aos="fade-up"
             >
-                {Certificate.map((certificate) => (
+                {certificates.map((certificate) => (
                     <SwiperSlide className="certificate__item" key={certificate.id}>
-                        <a href={certificate.link} className="certificate__link" target="_blank">
+                        <a href={certificate.link} className="certificate__link" target="_blank" rel="noreferrer">
                             <img src={certificate.image} alt={certificate.title} className="certificate__img" />
                         </a>
                     </SwiperSlide>
                 ))}
 
-            </Swiper> */}
+            </Swiper>
         </section>
     )
 }
