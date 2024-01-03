@@ -48,3 +48,27 @@ export const socials = [
         icon: "fa-brands fa-github"
     }
 ]
+
+export const educations = [
+    {
+        id: 1,
+        year: "2019 - 2023",
+        title: "Universitas Ahmad Dahlan",
+        desc: "Bachelor Degree of Computer Science. GPA: 3.87",
+    },
+    {
+        id: 2,
+        year: "2016 - 2019",
+        title: "SMA Negeri 1 Klirong",
+        desc: "Department of Natural Sciences (IPA)",
+    }
+]
+
+export const experiences = [
+    {
+        id: 1,
+        year: "August 2022 - December 2022",
+        title: "FrontEnd Developer Internship",
+        desc: "Building web-based Interumah applications with React (TypeScript) technology. Building a responsive and functional interface to enable users to have a good user experience when accessing the website from any device. Perform Unit Tests, End to End Tests, and Component or UI Tests on applications."
+    },
+];
