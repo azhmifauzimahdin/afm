@@ -1,9 +1,9 @@
 import React from 'react';
 import './ButtonLink.css';
 
-const ButtonLink = ({ href, children }) => {
+const ButtonLink = ({ href, target, rel, children, download }) => {
     return (
-        <a href={href} className="btn-link">{children}</a>
+        <a href={href} target={target} rel={rel} className="btn-link" download={download}>{children}</a>
     )
 }
 
