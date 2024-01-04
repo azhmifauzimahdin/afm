@@ -17,6 +17,10 @@ import LogoMySQL from '../assets/logo/logo-mysql.svg';
 import LogoPHP from '../assets/logo/logo-php.svg';
 import LogoLaravel from '../assets/logo/logo-laravel.svg';
 import LogoCodeigniter from '../assets/logo/logo-codeigniter.svg';
+import ProjectInterumah from '../assets/project/project-interumah.png';
+import ProjectVotos from '../assets/project/project-votos.png';
+import ProjectProfile from '../assets/project/project-web-profile.png';
+import ProjectCoomingSoon from '../assets/project/project-coming-soon.png';
 
 export const menus = [
     {
@@ -211,4 +215,39 @@ export const skills = [
         image: LogoCodeigniter,
         url: "https://www.codeigniter.com/"
     }
+]
+
+export const projects = [
+    {
+        id: 1,
+        title: "Interumah",
+        image: ProjectInterumah,
+        github: "#",
+        link: "",
+        skill: LogoReactJS
+    },
+    {
+        id: 2,
+        title: "Votos",
+        image: ProjectVotos,
+        github: "#",
+        link: "",
+        skill: LogoLaravel
+    },
+    {
+        id: 3,
+        title: "Web Profile AFM",
+        image: ProjectProfile,
+        github: "#",
+        link: "Link",
+        skill: LogoReactJS
+    },
+    {
+        id: 4,
+        title: "Coming Soon",
+        image: ProjectCoomingSoon,
+        github: "",
+        link: "",
+        skill: ""
+    },
 ]

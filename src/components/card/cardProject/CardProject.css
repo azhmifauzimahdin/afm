@@ -1,0 +1,85 @@
+.project__card {
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    height: 100%;
+}
+
+.project__img-block {
+    width: 92%;
+    margin: 0.8rem auto;
+    aspect-ratio: 16/9;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.project__img-block:hover {
+    transform: scale(1.04);
+}
+
+.project__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 2px 20px 0px rgb(69 67 96 / 5%);
+}
+
+.project__info {
+    width: 92%;
+    margin: 0 auto 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.project__title {
+    font-size: var(--h3-font-size);
+    margin-top: 0.5rem;
+}
+
+.project__template-icon {
+    width: 0.9rem;
+    margin-left: 0.4rem;
+}
+
+.project__link {
+    display: flex;
+    justify-self: end;
+    align-self: end;
+}
+
+.project__button-link,
+.project__button-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    text-align: center;
+    transition: .3s;
+    margin-inline: .2rem;
+}
+
+.project__button-github {
+    background-color: rgba(249, 123, 139);
+}
+
+.project__button-link {
+    background-color: rgba(108, 108, 299);
+}
+
+.project__button-github:hover {
+    box-shadow: 0 0 14px 1px rgba(249, 123, 139);
+}
+
+.project__button-link:hover {
+    box-shadow: 0 0 14px 1px rgba(108, 108, 299);
+}
