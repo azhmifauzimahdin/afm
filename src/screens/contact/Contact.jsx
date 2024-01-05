@@ -85,7 +85,7 @@ const Contact = () => {
                         </div>
                         <div className="contact__form-div">
                             <input
-                                type="text"
+                                type="email"
                                 name="email"
                                 onInput={(e) => e.target.value = ("" + e.target.value).toLowerCase()}
                                 className={`contact__form-input ${formik.errors.email && formik.touched.email ? "form-invalid" : ""}`}
