@@ -4,10 +4,10 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import { Button } from '../../components';
+import { Button, Loading } from '../../components';
 
 const Contact = () => {
-    const [disabled, setDisabled] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const formik = useFormik({
         initialValues: {
@@ -24,7 +24,7 @@ const Contact = () => {
         }),
         onSubmit: (values, { setSubmitting, resetForm }) => {
             try {
-                setDisabled(true);
+                setLoading(true);
                 emailjs
                     .send(
                         import.meta.env.VITE_SERVICE_ID,
@@ -33,25 +33,29 @@ const Contact = () => {
                         import.meta.env.VITE_PUBLIC_KEY
                     )
                     .then(() => {
+                        setLoading(false);
                         Swal.fire({
                             text: "Message Sent Successfully",
                             icon: "success"
                         });
                         setSubmitting(false);
                         resetForm();
-                        setDisabled(false);
-                    }, (error) => {
+                    }, () => {
+                        setLoading(false);
                         Swal.fire({
                             title: "Ooops, something went wrong",
-                            text: error.text,
                             icon: "error"
                         })
                         setSubmitting(false);
-                        setDisabled(false);
                     });
             }
             catch {
+                Swal.fire({
+                    title: "Oops, something went wrong",
+                    icon: "error"
+                })
                 setSubmitting(false);
+                setLoading(false);
             }
         }
     })
@@ -122,10 +126,10 @@ const Contact = () => {
                             <p className="contact__form-error">{formik.errors.message}</p>
                         )}
                     </div>
-                    <button type="submit" disabled={disabled} className="btn">Send Message</button>
-                    {/* <Button type="submit" >Send Message</Button> */}
+                    <Button type="submit" disabled={loading} >Send Message</Button>
                 </form>
             </div>
+            {loading && <Loading />}
         </section>
     )
 }

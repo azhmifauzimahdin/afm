@@ -4,7 +4,6 @@
     border-radius: var(--border-radius);
     position: relative;
     box-shadow: var(--shadow);
-    /* align-self: start; */
 }
 
 .timeline__item {
