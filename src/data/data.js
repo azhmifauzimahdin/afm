@@ -239,7 +239,7 @@ export const projects = [
         title: "Web Profile AFM",
         image: ProjectProfile,
         github: "#",
-        link: "Link",
+        link: "#home",
         skill: LogoReactJS
     },
     {
