@@ -27,10 +27,10 @@ const Contact = () => {
                 setLoading(true);
                 emailjs
                     .send(
-                        import.meta.env.VITE_SERVICE_ID,
-                        import.meta.env.VITE_TEMPLATE_ID,
+                        'service_7lq8a1i',
+                        'template_rfcptro',
                         values,
-                        import.meta.env.VITE_PUBLIC_KEY
+                        'FjAEyAgGzrjcksr41'
                     )
                     .then(() => {
                         setLoading(false);
