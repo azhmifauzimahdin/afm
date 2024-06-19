@@ -21,6 +21,7 @@ import ProjectInterumah from '../assets/project/project-interumah.png';
 import ProjectVotos from '../assets/project/project-votos.png';
 import ProjectProfile from '../assets/project/project-web-profile.png';
 import ProjectCoomingSoon from '../assets/project/project-coming-soon.png';
+import ProjectSimrsEvizia from '../assets/project/project-simrs-evizia.png';
 
 export const menus = [
     {
@@ -91,6 +92,12 @@ export const educations = [
 export const experiences = [
     {
         id: 1,
+        year: "January 2024 - Now",
+        title: "Technical Support Software",
+        desc: "Maintaining the Hospital information system and monitoring programs in the hospital. Developing hospital information systems in accordance with hospital business developments. Handle complaints from users."
+    },
+    {
+        id: 2,
         year: "August 2022 - December 2022",
         title: "FrontEnd Developer Internship",
         desc: "Building web-based Interumah applications with React (TypeScript) technology. Building a responsive and functional interface to enable users to have a good user experience when accessing the website from any device. Perform Unit Tests, End to End Tests, and Component or UI Tests on applications."
@@ -244,6 +251,14 @@ export const projects = [
     },
     {
         id: 4,
+        title: "SIMRS Evizia",
+        image: ProjectSimrsEvizia,
+        github: "",
+        link: "",
+        skill: LogoHTML
+    },
+    {
+        id: 5,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
         github: "",
