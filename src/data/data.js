@@ -229,7 +229,7 @@ export const projects = [
         id: 1,
         title: "Interumah",
         image: ProjectInterumah,
-        github: "#",
+        github: "https://github.com/azhmifauzimahdin/interumah",
         link: "",
         skill: LogoReactJS,
         update: []
@@ -238,7 +238,7 @@ export const projects = [
         id: 2,
         title: "Votos",
         image: ProjectVotos,
-        github: "#",
+        github: "https://github.com/azhmifauzimahdin/VotOs",
         link: "",
         skill: LogoLaravel,
         update: []
@@ -247,7 +247,7 @@ export const projects = [
         id: 3,
         title: "Web Profile AFM",
         image: ProjectProfile,
-        github: "#",
+        github: "https://github.com/azhmifauzimahdin/afm",
         link: "#home",
         skill: LogoReactJS,
         update: [
@@ -270,7 +270,7 @@ export const projects = [
         id: 5,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
-        github: "",
+        github: "https://github.com/azhmifauzimahdin/afm-dev",
         link: "",
         skill: "",
         update: []
