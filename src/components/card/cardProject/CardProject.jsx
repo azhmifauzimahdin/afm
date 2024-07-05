@@ -40,6 +40,14 @@ const CardProject = ({ data }) => {
                             )}
                         </div>
                     </div>
+                    {project.update.length > 0 && (
+                        <div className="project_update">
+                            <h5 className="project_update--title">Next Update</h5>
+                            {project.update.map((update, index) => (
+                                <div key={index} className="project_update--body" style={{ backgroundColor: update.color }}>{update.description}</div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             ))}
         </>

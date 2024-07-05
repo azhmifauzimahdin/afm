@@ -1,24 +1,24 @@
 .project__container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.875rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
 }
 
 @media screen and (max-width: 992px) {
-    .project__container {
-        grid-template-columns: repeat(2, 330px);
-        justify-content: center;
-        row-gap: 1.875rem;
-    }
+  .project__container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .project__container {
-        grid-template-columns: 550px;
-    }
+  .project__container {
+    grid-template-columns: 550px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .project__container {
-        grid-template-columns: 1fr;
-    }
+  .project__container {
+    grid-template-columns: 1fr;
+  }
 }

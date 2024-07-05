@@ -231,7 +231,8 @@ export const projects = [
         image: ProjectInterumah,
         github: "#",
         link: "",
-        skill: LogoReactJS
+        skill: LogoReactJS,
+        update: []
     },
     {
         id: 2,
@@ -239,7 +240,8 @@ export const projects = [
         image: ProjectVotos,
         github: "#",
         link: "",
-        skill: LogoLaravel
+        skill: LogoLaravel,
+        update: []
     },
     {
         id: 3,
@@ -247,7 +249,13 @@ export const projects = [
         image: ProjectProfile,
         github: "#",
         link: "#home",
-        skill: LogoReactJS
+        skill: LogoReactJS,
+        update: [
+            {
+                id: 1,
+                description: "Dashboard to manage data",
+            }
+        ]
     },
     {
         id: 4,
@@ -255,7 +263,8 @@ export const projects = [
         image: ProjectSimrsEvizia,
         github: "",
         link: "",
-        skill: LogoHTML
+        skill: LogoHTML,
+        update: []
     },
     {
         id: 5,
@@ -263,6 +272,7 @@ export const projects = [
         image: ProjectCoomingSoon,
         github: "",
         link: "",
-        skill: ""
+        skill: "",
+        update: []
     },
 ]
