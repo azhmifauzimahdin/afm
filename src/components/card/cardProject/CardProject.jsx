@@ -29,12 +29,12 @@ const CardProject = ({ data }) => {
                         </div>
                         <div className="project__link">
                             {project.link && (
-                                <a href={project.link} className="project__button-link">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project__button-link">
                                     <i className="fa-solid fa-eye"></i>
                                 </a>
                             )}
                             {project.github && (
-                                <a href={project.github} className="project__button-github">
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project__button-github">
                                     <i className="fa-brands fa-github"></i>
                                 </a>
                             )}
