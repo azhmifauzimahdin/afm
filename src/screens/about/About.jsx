@@ -16,7 +16,7 @@ const About = () => {
                     <div className="about__info">
                         <h2 className="about__greeting">Hello!</h2>
                         <p className="about__description">
-                            A creative web developer who started focusing on learning programming in 2019 when he started college. Skilled and experienced in designing, developing and testing websites using the latest technology. Has used Javascript, React, and HTML programming languages professionally. Want to take on more challenges on how to optimize user experience.
+                            A creative web developer who started focusing on learning programming in 2019 when he started college. Skilled and experienced in designing, developing and testing websites using the latest technology. Has used Javascript, PHP, and HTML programming languages professionally. Want to take on more challenges on how to optimize user experience.
                         </p>
                     </div>
 

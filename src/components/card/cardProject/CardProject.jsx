@@ -20,11 +20,11 @@ const CardProject = ({ data }) => {
                         <div className="project__detail">
                             <h3 className="project__title">
                                 {project.title}
-                                {project.skill && (
-                                    <span className="project_template">
-                                        <img src={project.skill} alt="Laravel" className="project__template-icon" />
+                                {project.skill && project.skill.map((skill, index) => (
+                                    <span key={index} className="project_template">
+                                        <img src={skill} alt="Laravel" className="project__template-icon" />
                                     </span>
-                                )}
+                                ))}
                             </h3>
                         </div>
                         <div className="project__link">

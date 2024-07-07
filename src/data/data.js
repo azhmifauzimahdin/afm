@@ -17,6 +17,8 @@ import LogoMySQL from '../assets/logo/logo-mysql.svg';
 import LogoPHP from '../assets/logo/logo-php.svg';
 import LogoLaravel from '../assets/logo/logo-laravel.svg';
 import LogoCodeigniter from '../assets/logo/logo-codeigniter.svg';
+import LogoVB from '../assets/logo/logo-VB.svg';
+import logoTailwindcss from '../assets/logo/logo-tailwindcss.svg';
 import ProjectInterumah from '../assets/project/project-interumah.png';
 import ProjectVotos from '../assets/project/project-votos.png';
 import ProjectProfile from '../assets/project/project-web-profile.png';
@@ -200,27 +202,39 @@ export const skills = [
     },
     {
         id: 7,
+        title: "Tailwindcss",
+        image: logoTailwindcss,
+        url: "https://tailwindcss.com/"
+    },
+    {
+        id: 8,
         title: "MySQL",
         image: LogoMySQL,
         url: "https://www.mysql.com/"
     },
     {
-        id: 8,
+        id: 9,
         title: "PHP",
         image: LogoPHP,
         url: "https://www.php.net/"
     },
     {
-        id: 9,
+        id: 10,
         title: "Laravel",
         image: LogoLaravel,
         url: "https://laravel.com/"
     },
     {
-        id: 10,
+        id: 11,
         title: "Codeigniter",
         image: LogoCodeigniter,
         url: "https://www.codeigniter.com/"
+    },
+    {
+        id: 12,
+        title: "Visual Basic",
+        image: LogoVB,
+        url: "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
     }
 ]
 
@@ -231,7 +245,7 @@ export const projects = [
         image: ProjectInterumah,
         github: "https://github.com/azhmifauzimahdin/interumah",
         link: "",
-        skill: LogoReactJS,
+        skill: [LogoReactJS],
         update: []
     },
     {
@@ -240,7 +254,7 @@ export const projects = [
         image: ProjectVotos,
         github: "https://github.com/azhmifauzimahdin/VotOs",
         link: "",
-        skill: LogoLaravel,
+        skill: [LogoLaravel],
         update: []
     },
     {
@@ -249,7 +263,7 @@ export const projects = [
         image: ProjectProfile,
         github: "https://github.com/azhmifauzimahdin/afm",
         link: "#home",
-        skill: LogoReactJS,
+        skill: [LogoReactJS],
         update: [
             {
                 id: 1,
@@ -263,7 +277,7 @@ export const projects = [
         image: ProjectSimrsEvizia,
         github: "",
         link: "",
-        skill: LogoHTML,
+        skill: [LogoVB],
         update: []
     },
     {
@@ -272,7 +286,7 @@ export const projects = [
         image: ProjectCoomingSoon,
         github: "https://github.com/azhmifauzimahdin/afm-dev",
         link: "",
-        skill: "",
+        skill: [LogoLaravel, LogoReactJS],
         update: []
     },
 ]
