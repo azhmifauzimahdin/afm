@@ -17,7 +17,7 @@ import LogoMySQL from '../assets/logo/logo-mysql.svg';
 import LogoPHP from '../assets/logo/logo-php.svg';
 import LogoLaravel from '../assets/logo/logo-laravel.svg';
 import LogoCodeigniter from '../assets/logo/logo-codeigniter.svg';
-import LogoVB from '../assets/logo/logo-VB.svg';
+import LogoVB from '../assets/logo/logo-vb.svg';
 import logoTailwindcss from '../assets/logo/logo-tailwindcss.svg';
 import ProjectInterumah from '../assets/project/project-interumah.png';
 import ProjectVotos from '../assets/project/project-votos.png';
