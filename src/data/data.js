@@ -289,4 +289,13 @@ export const projects = [
         skill: [LogoLaravel, LogoReactJS],
         update: []
     },
+    {
+        id: 6,
+        title: "Coming Soon",
+        image: ProjectCoomingSoon,
+        github: "https://github.com/azhmifauzimahdin/afm-app",
+        link: "",
+        skill: [LogoLaravel],
+        update: []
+    },
 ]
