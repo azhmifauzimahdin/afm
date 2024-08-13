@@ -24,6 +24,7 @@ import ProjectVotos from '../assets/project/project-votos.png';
 import ProjectProfile from '../assets/project/project-web-profile.png';
 import ProjectCoomingSoon from '../assets/project/project-coming-soon.png';
 import ProjectSimrsEvizia from '../assets/project/project-simrs-evizia.png';
+import ProjectBadmintonSkor from '../assets/project/project-badminton-skor.png';
 
 export const menus = [
     {
@@ -282,6 +283,24 @@ export const projects = [
     },
     {
         id: 5,
+        title: "Badminton Skor",
+        image: ProjectBadmintonSkor,
+        github: "https://github.com/azhmifauzimahdin/badminton_score",
+        link: "http://badmintonscore.rf.gd/",
+        skill: [LogoLaravel],
+        update: [
+            {
+                id: 1,
+                description: "Login feature",
+            },
+            {
+                id: 2,
+                description: "Adding several features",
+            }
+        ]
+    },
+    {
+        id: 6,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
         github: "https://github.com/azhmifauzimahdin/afm-dev",
@@ -290,7 +309,7 @@ export const projects = [
         update: []
     },
     {
-        id: 6,
+        id: 7,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
         github: "https://github.com/azhmifauzimahdin/afm-app",
