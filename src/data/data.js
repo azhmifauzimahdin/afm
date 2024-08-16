@@ -303,7 +303,7 @@ export const projects = [
         id: 7,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/rsikotamagelang",
+        github: "https://github.com/azhmifauzimahdin/dcnrsikotamagelang",
         link: "",
         skill: [LogoLaravel],
         update: []
