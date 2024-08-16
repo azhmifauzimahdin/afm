@@ -254,7 +254,7 @@ export const projects = [
         title: "Votos",
         image: ProjectVotos,
         github: "https://github.com/azhmifauzimahdin/VotOs",
-        link: "",
+        link: "http://votos.wuaze.com/",
         skill: [LogoLaravel],
         update: []
     },
@@ -288,16 +288,7 @@ export const projects = [
         github: "https://github.com/azhmifauzimahdin/badminton_score",
         link: "http://badmintonscore.rf.gd/",
         skill: [LogoLaravel],
-        update: [
-            {
-                id: 1,
-                description: "Login feature",
-            },
-            {
-                id: 2,
-                description: "Adding several features",
-            }
-        ]
+        update: []
     },
     {
         id: 6,
@@ -312,7 +303,7 @@ export const projects = [
         id: 7,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/afm-app",
+        github: "https://github.com/azhmifauzimahdin/rsikotamagelang",
         link: "",
         skill: [LogoLaravel],
         update: []
