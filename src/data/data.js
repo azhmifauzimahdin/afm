@@ -25,6 +25,7 @@ import ProjectProfile from '../assets/project/project-web-profile.png';
 import ProjectCoomingSoon from '../assets/project/project-coming-soon.png';
 import ProjectSimrsEvizia from '../assets/project/project-simrs-evizia.png';
 import ProjectBadmintonSkor from '../assets/project/project-badminton-skor.png';
+import ProjectDCNRSIKotaMagelang from '../assets/project/project-dcn-rsikotamagelang.png';
 
 export const menus = [
     {
@@ -293,7 +294,7 @@ export const projects = [
     {
         id: 6,
         title: "DCN RSI Kota Magelang",
-        image: ProjectCoomingSoon,
+        image: ProjectDCNRSIKotaMagelang,
         github: "https://github.com/azhmifauzimahdin/dcnrsikotamagelang",
         link: "http://dcnrsikotamagelang.wuaze.com/",
         skill: [LogoLaravel],
