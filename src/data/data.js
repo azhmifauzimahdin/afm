@@ -292,20 +292,20 @@ export const projects = [
     },
     {
         id: 6,
-        title: "Coming Soon",
+        title: "DCN RSI Kota Magelang",
         image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/afm-dev",
-        link: "",
-        skill: [LogoLaravel, LogoReactJS],
+        github: "https://github.com/azhmifauzimahdin/dcnrsikotamagelang",
+        link: "http://dcnrsikotamagelang.wuaze.com/",
+        skill: [LogoLaravel],
         update: []
     },
     {
         id: 7,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/dcnrsikotamagelang",
+        github: "https://github.com/azhmifauzimahdin/rsikotamagelang",
         link: "",
-        skill: [LogoLaravel],
+        skill: [LogoLaravel, LogoReactJS],
         update: []
     },
 ]
