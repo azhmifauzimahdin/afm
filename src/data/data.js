@@ -19,6 +19,7 @@ import LogoLaravel from '../assets/logo/logo-laravel.svg';
 import LogoCodeigniter from '../assets/logo/logo-codeigniter.svg';
 import LogoVB from '../assets/logo/logo-vb.svg';
 import logoTailwindcss from '../assets/logo/logo-tailwindcss.svg';
+import LogoNextJs from '../assets/logo/logo-nextjs.svg';
 import ProjectInterumah from '../assets/project/project-interumah.png';
 import ProjectVotos from '../assets/project/project-votos.png';
 import ProjectProfile from '../assets/project/project-web-profile.png';
@@ -26,6 +27,8 @@ import ProjectCoomingSoon from '../assets/project/project-coming-soon.png';
 import ProjectSimrsEvizia from '../assets/project/project-simrs-evizia.png';
 import ProjectBadmintonSkor from '../assets/project/project-badminton-skor.png';
 import ProjectDCNRSIKotaMagelang from '../assets/project/project-dcn-rsikotamagelang.png';
+import ProjectESEPRSIKotaMagelang from '../assets/project/project-esep.png';
+import ProjectESIGNRSIKotaMagelang from '../assets/project/project-esign.png';
 
 export const menus = [
     {
@@ -186,54 +189,60 @@ export const skills = [
     },
     {
         id: 4,
-        title: "React Js",
-        image: LogoReactJS,
-        url: "https://legacy.reactjs.org/"
-    },
-    {
-        id: 5,
-        title: "Vue Js",
-        image: LogoVueJS,
-        url: "https://vuejs.org/"
-    },
-    {
-        id: 6,
-        title: "Bootstrap",
-        image: LogoBootstrap,
-        url: "https://getbootstrap.com/"
-    },
-    {
-        id: 7,
-        title: "Tailwindcss",
-        image: logoTailwindcss,
-        url: "https://tailwindcss.com/"
-    },
-    {
-        id: 8,
-        title: "MySQL",
-        image: LogoMySQL,
-        url: "https://www.mysql.com/"
-    },
-    {
-        id: 9,
         title: "PHP",
         image: LogoPHP,
         url: "https://www.php.net/"
     },
     {
+        id: 5,
+        title: "React Js",
+        image: LogoReactJS,
+        url: "https://legacy.reactjs.org/"
+    },
+    {
+        id: 6,
+        title: "Vue Js",
+        image: LogoVueJS,
+        url: "https://vuejs.org/"
+    },
+    {
+        id: 7,
+        title: "Next Js",
+        image: LogoNextJs,
+        url: "https://nextjs.org/"
+    },
+    {
+        id: 8,
+        title: "Bootstrap",
+        image: LogoBootstrap,
+        url: "https://getbootstrap.com/"
+    },
+    {
+        id: 9,
+        title: "Tailwindcss",
+        image: logoTailwindcss,
+        url: "https://tailwindcss.com/"
+    },
+    {
         id: 10,
+        title: "MySQL",
+        image: LogoMySQL,
+        url: "https://www.mysql.com/"
+    },
+    {
+        id: 11,
         title: "Laravel",
         image: LogoLaravel,
         url: "https://laravel.com/"
     },
     {
-        id: 11,
+        id: 12,
         title: "Codeigniter",
         image: LogoCodeigniter,
         url: "https://www.codeigniter.com/"
     },
     {
-        id: 12,
+        id: 13,
         title: "Visual Basic",
         image: LogoVB,
         url: "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
@@ -266,12 +275,7 @@ export const projects = [
         github: "https://github.com/azhmifauzimahdin/afm",
         link: "#home",
         skill: [LogoReactJS],
-        update: [
-            {
-                id: 1,
-                description: "Dashboard to manage data",
-            }
-        ]
+        update: []
     },
     {
         id: 4,
@@ -287,35 +291,44 @@ export const projects = [
         title: "Badminton Skor",
         image: ProjectBadmintonSkor,
         github: "https://github.com/azhmifauzimahdin/badminton_score",
-        link: "http://badmintonscore.rf.gd/",
+        link: "",
         skill: [LogoLaravel],
         update: []
     },
     {
         id: 6,
-        title: "DCN RSI Kota Magelang",
+        title: "DCN RSI",
         image: ProjectDCNRSIKotaMagelang,
         github: "https://github.com/azhmifauzimahdin/dcnrsikotamagelang",
-        link: "http://dcnrsikotamagelang.wuaze.com/",
+        link: "",
         skill: [LogoLaravel],
         update: []
     },
     {
         id: 7,
-        title: "Coming Soon",
-        image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/rsikotamagelang",
+        title: "ESIGN RSI",
+        image: ProjectESIGNRSIKotaMagelang,
+        github: "",
         link: "",
         skill: [LogoLaravel, LogoReactJS],
         update: []
     },
     {
         id: 8,
+        title: "ESEP RSI",
+        image: ProjectESEPRSIKotaMagelang,
+        github: "",
+        link: "",
+        skill: [LogoLaravel, LogoReactJS],
+        update: []
+    },
+    {
+        id: 9,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
-        github: "https://github.com/azhmifauzimahdin/afm-shop",
+        github: "",
         link: "",
-        skill: [LogoLaravel],
+        skill: [LogoNextJs],
         update: []
     },
 ]
