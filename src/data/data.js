@@ -29,6 +29,7 @@ import ProjectBadmintonSkor from '../assets/project/project-badminton-skor.png';
 import ProjectDCNRSIKotaMagelang from '../assets/project/project-dcn-rsikotamagelang.png';
 import ProjectESEPRSIKotaMagelang from '../assets/project/project-esep.png';
 import ProjectESIGNRSIKotaMagelang from '../assets/project/project-esign.png';
+import ProjectAzen from '../assets/project/project-azen.png';
 
 export const menus = [
     {
@@ -324,6 +325,15 @@ export const projects = [
     },
     {
         id: 9,
+        title: "AZEN",
+        image: ProjectAzen,
+        github: "",
+        link: "https://azeninv.vercel.app/",
+        skill: [LogoNextJs],
+        update: []
+    },
+    {
+        id: 10,
         title: "Coming Soon",
         image: ProjectCoomingSoon,
         github: "",
